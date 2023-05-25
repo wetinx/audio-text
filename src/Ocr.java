@@ -1,11 +1,7 @@
-/*
- * @version 1.0.1
- * @Author: wei tin
- */
 import java.util.*;
 import org.json.JSONObject;
 import com.baidu.aip.ocr.AipOcr;
-class TestOcr {
+class Ocr {
     //设置APPID/AK/SK
     public static final String APP_ID = "33982129";
     public static final String API_KEY = "xmAlrRM1Utn3P5KemGUDZcmh";

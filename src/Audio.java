@@ -1,19 +1,15 @@
-/*
- * @version 1.0.1
- * @Author: wei tin
- */
-import java.util.*;
+import com.baidu.aip.speech.AipSpeech;
 import org.json.JSONObject;
-import com.baidu.aip.ocr.AipOcr;
-class TestOcr {
+
+class Audio {
     //设置APPID/AK/SK
     public static final String APP_ID = "33982129";
     public static final String API_KEY = "xmAlrRM1Utn3P5KemGUDZcmh";
     public static final String SECRET_KEY = "GabatYtzXyFODmtPiw9QxEapafgPhLg6";
 
     public static void main(String[] args) {
-        // 初始化一个AipOcr
-        AipOcr client = new AipOcr(APP_ID, API_KEY, SECRET_KEY);
+        // 初始化一个AipSpeech
+        AipSpeech client = new AipSpeech(APP_ID, API_KEY, SECRET_KEY);
 
         // 可选：设置网络连接参数
         client.setConnectionTimeoutInMillis(2000);
@@ -28,8 +24,7 @@ class TestOcr {
         System.setProperty("aip.log4j.conf", "path/to/your/log4j.properties");
 
         // 调用接口
-        String path = "src/test.jpg";
-        JSONObject res = client.basicGeneral(path, new HashMap<String, String>());
+        JSONObject res = client.asr("src/sample.pcm", "pcm", 16000, null);
         System.out.println(res.toString(2));
 
     }
