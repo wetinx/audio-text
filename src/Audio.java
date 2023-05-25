@@ -1,6 +1,8 @@
 import com.baidu.aip.speech.AipSpeech;
 import org.json.JSONObject;
 
+import javax.swing.*;
+
 class Audio {
     //设置APPID/AK/SK
     public static final String APP_ID = "33982129";
@@ -8,6 +10,9 @@ class Audio {
     public static final String SECRET_KEY = "GabatYtzXyFODmtPiw9QxEapafgPhLg6";
 
     public static void main(String[] args) {
+
+
+
         // 初始化一个AipSpeech
         AipSpeech client = new AipSpeech(APP_ID, API_KEY, SECRET_KEY);
 
