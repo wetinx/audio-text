@@ -6,8 +6,8 @@ import javax.swing.*;
 class Audio {
     //设置APPID/AK/SK
     public static final String APP_ID = "33982129";
-    public static final String API_KEY = "xmAlrRM1Utn3P5KemGUDZcmh";
-    public static final String SECRET_KEY = "GabatYtzXyFODmtPiw9QxEapafgPhLg6";
+    public static final String API_KEY = "xmAlrRM1Utn3P5KemGUDZcmAh";
+    public static final String SECRET_KEY = "GabatYtzXyFODmtPiw9QxEapafgPhLgF6";
 
     public static void main(String[] args) {
 
